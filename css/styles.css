@@ -1,6 +1,6 @@
 
 :root {
-    --body-background-color: #E5E5E5;
+    --body-background-color: #FFFFFF;
     --header-background-color:#ECECEC;
     --header-logo-color:#000000;
     --main-title-color:#212121;
@@ -85,8 +85,6 @@ img {
 
 .header {
     background-color: var(--hero-title-color);
-    padding-top: 24px;
-    padding-bottom: 25px;
     border-bottom: 1px solid var(--header-background-color);
 }
 
@@ -117,8 +115,7 @@ img {
 .header-list {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
   
 }      
 
@@ -141,7 +138,12 @@ img {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--main-title-color)}
+    color: var(--main-title-color);
+    
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
 .current {
     color: var(--accent-color);
@@ -159,15 +161,12 @@ img {
 .hero .container {
     width: 696px;
     margin: 0 auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
-   
-  }
+        }
 
 .hero {
     background-color: var(--hero-background-color);
-    padding-top: var(--typical-padding);
-    padding-bottom: var(--typical-padding);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -178,9 +177,9 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-title-color);
-    padding: 200 452 280 452;
+    width: 696px;
     
-
+    margin: 0 auto;
     margin-bottom: 30px;
 }
 
@@ -188,14 +187,13 @@ img {
 .hero-btn:focus {
       background-color: var(--hero-btn-color);
 }
+
 .hero-btn {
     font-family:inherit;
     background-color: var(--accent-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--hero-title-color);
@@ -206,7 +204,7 @@ img {
     margin: 0 auto;
     display: block;
     margin-top: 30px;
-    padding: 10px 32px 10px 32px ;
+    border: none;
 }
 
 .btn {cursor: pointer;}
@@ -227,6 +225,7 @@ img {
     max-width: 270px;
 
 }
+
 .benefits-title {
     font-weight: 700;
     font-size: 14px;
@@ -292,10 +291,18 @@ img {
 
 .team-item {
     background-color: var(--team-item-background-color);
+    border: 1px solid var(--projects-btn-background-color);
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
+   
+
+
 .team-item:not(:first-child) {
     margin-left: 30px;
+   
 }
+
 
 .team-item-title {
     font-weight: 500;
@@ -370,10 +377,7 @@ img {
     color: var(--accent-color);
 }
 
-.projects {
-    background-color: var(--hero-title-color);
 
-}
 
 .project-btn:hover,
 .project-btn:focus {
@@ -431,7 +435,7 @@ img {
 .container-name {
     background-color: var(--hero-title-color);
     border: 1px solid var(--header-background-color);
-
+    border-top: none;
     padding: 20px 24px 20px 24px;
   
 }     
